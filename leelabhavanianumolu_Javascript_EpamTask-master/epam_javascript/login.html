@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="style.css">
+	<script >function validate(logf) {
+		
+		if(logf.emailId.value.length==0 && logf.password.value.length==0){
+		alert("Username and Password cannot be empty.")
+		return false;
+		}
+	    if(logf.emailId.value.length==0){
+		alert("Username cannot be empty.")
+		return false;
+		}
+		var possible = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9])+$/;
+		if (!possible.test(logf.emailId.value)) {
+		    alert("Please provide a valid email address");
+			return false;
+		}
+	    if(logf.password.value.length==0){
+		alert("Password cannot be empty.")
+		return false;
+		}
+		
+        
+       if ( logf.emailId.value== "example@gmail.com" && logf.password.value == "abc123"){
+        alert ("Login successfully");
+       
+        }
+       else{
+         alert('Wrong Username or Password')
+           return false;
+          }
+	}
+	
+	</script>
+<body align="center">
+	<div class="loginoutdiv">
+		<form name="logf" onsubmit="return validate(logf)">
+			<h1 align="center">Login</h1>
+			<div class="tabl"><table style="width:100%">
+			<tr>
+			<th><label>Email Id/Username:</label></th>
+			<th><input type="text" name="emailId" placeholder="Enter Email Id" ><br><br></th></tr>
+			<tr><th><label>Password:</label></th>
+			
+			<th><input type="password" name="password" placeholder="Enter Password" ><br><br></th></tr>
+			<tr><th colspan="2"><button>Login</button></th></tr>
+			</table></div>
+		</form>
+		<hr>
+		<p class="red">Note:Try the given username and password<br></p>
+		     <p class="green">Username: example@gmail.com<br>
+		Password:abc123</p>
+		<p class="blue">Do not have an account? Register below</p><button style="color:blue"><a href="registration.html">Register</a></button>
+	</div>
+</body>
+</html>

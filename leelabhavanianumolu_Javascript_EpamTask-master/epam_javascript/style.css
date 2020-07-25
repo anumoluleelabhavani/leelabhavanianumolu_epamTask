@@ -1,0 +1,41 @@
+.loginoutdiv{
+			border: double;
+  			text-align: center;
+  			margin-left: 350px;
+   			width: 600px;
+   			height: 480px;
+  			margin-top : 70px;
+  			font-size: 20px;
+			
+		}
+		button{
+			width: 100px;
+			height:30px;
+		}
+		.red{
+		color:red;
+		}
+		.green{
+		color:green;
+		}
+		.tabl{
+		margin-left:130px;
+		width: 300px;
+   	    height: 150px;
+		
+		}
+		
+		.blue{
+		color:blue;
+		}
+		.outdiv{
+			border: double;
+  			text-align: center;
+  			margin-left: 350px;
+   			width: 600px;
+   			height: 550px;
+  			margin-top : 50px;
+  			font-size: 20px;
+			
+		}
+		
